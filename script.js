@@ -121,3 +121,12 @@ function test(){
 
 test();
 console.log(`Global Scope : `, a, b,c);
+if(true){
+    var a =33;
+    let b=44;
+    const c= 55;
+    console.log(`If Scope : `, a,b,c)
+}
+
+console.log("Hello Git");
+console.log("Hello Git");
