@@ -107,26 +107,40 @@
 
 /// ES6 Practice
 
-let a= 10;
-var b= 9;
-const c= 8;
-console.log(`Global Scope : `, a,b,c );
+// let a= 10;
+// var b= 9;
+// const c= 8;
+// console.log(`Global Scope : `, a,b,c );
 
-function test(){
-    var a = 12;
-    let b = 11;
-    const c =13;
-    console.log(`Function Scope : `, a, b, c);
+// function test(){
+//     var a = 12;
+//     let b = 11;
+//     const c =13;
+//     console.log(`Function Scope : `, a, b, c);
+// }
+
+// test();
+// console.log(`Global Scope : `, a, b,c);
+// if(true){
+//     var a =33;
+//     let b=44;
+//     const c= 55;
+//     console.log(`If Scope : `, a,b,c)
+// }
+
+// console.log("Hello Git");
+// console.log("Hello Git");
+
+// for(var b=0 ; b<10 ; b++)
+// {
+//     console.log(`Loop : `, b);
+// }
+// console.log(`Global Scope : `, a,b,c );
+
+//--------------Arrow Function--------------
+
+let getSquare = num => {
+    return num*num;
 }
 
-test();
-console.log(`Global Scope : `, a, b,c);
-if(true){
-    var a =33;
-    let b=44;
-    const c= 55;
-    console.log(`If Scope : `, a,b,c)
-}
-
-console.log("Hello Git");
-console.log("Hello Git");
+console.log(getSquare(10));
