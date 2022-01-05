@@ -139,7 +139,7 @@
 
 //--------------Arrow Function--------------
 
-let getSquare = num => {
+let getSquare = (num) => {
     return num*num;
 }
 
