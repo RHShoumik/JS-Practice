@@ -139,8 +139,32 @@
 
 //--------------Arrow Function--------------
 
-let getSquare = (num) => {
-    return num*num;
-}
+// let getSquare = (num) => {
+//     return num*num;
+// }
 
-console.log(getSquare(10));
+// console.log(getSquare(10));
+ 
+// //--------------- calback function----------------
+
+ let number = [1,2,3,4,5,6,7,8,9];
+
+// let printAll = (item) => {
+//     console.log(item);
+// }
+
+// number.forEach(printAll);
+
+// const fruits = ["apple", "orange", "cherry"];
+// fruits.forEach(printAll);
+
+
+// let squareNum = number.map(getSquare);
+// console.log(squareNum);
+
+let squareAll = (item) => item * item;
+
+let squareNum = number.map(item => item*item);
+console.log(squareNum);
+
+number.forEach(item => console.log(item * item));
