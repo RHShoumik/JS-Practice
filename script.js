@@ -184,6 +184,8 @@
 // console.log(obj1);
 // console.log(obj2);
 
+//--------------------------------------------
+
 // class Vehicle{
 //     constructor(pram){
 //         this.color = pram;
@@ -196,15 +198,56 @@
 // console.log(obj1);
 // console.log(obj2);
 
+//--------------------------------------------
+
+// class Vehicle{
+//     constructor(pram1 , pram2){
+//         this.color = pram1;
+//         this.sitCapacity = pram2
+//     }
+// }
+
+// let obj1 = new Vehicle("RED" , 20);
+// let obj2 = new Vehicle("ORANGE" , 4);
+
+// console.log(obj1.color);
+// console.log(obj2.sitCapacity);
+
+//--------------------------------------------
+
+// class Vehicle{
+//     constructor(pram1 , pram2){
+//         this.color = pram1;
+//         this.sitCapacity = pram2
+//     }
+//     saySomething(){
+//         console.log("I am from class");
+//     }
+// }
+
+// let obj1 = new Vehicle("RED" , 20);
+// let obj2 = new Vehicle("ORANGE" , 4);
+
+// console.log(obj1.color);
+// console.log(obj2.sitCapacity);
+// obj1.saySomething();
+
+//--------------------------------------------
 class Vehicle{
     constructor(pram1 , pram2){
         this.color = pram1;
         this.sitCapacity = pram2
+    }
+    saySomething(){
+        console.log(this.color);
     }
 }
 
 let obj1 = new Vehicle("RED" , 20);
 let obj2 = new Vehicle("ORANGE" , 4);
 
-console.log(obj1.color);
-console.log(obj2.sitCapacity);
+
+obj1.saySomething();
+
+
+//--------------------------------------------
