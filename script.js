@@ -172,14 +172,26 @@
 
 //-------------class------------
 
+// class Vehicle{
+//     constructor(){
+//         this.color = "red";
+//     }
+// }
+
+// let obj1 = new Vehicle();
+// let obj2 = new Vehicle();
+
+// console.log(obj1);
+// console.log(obj2);
+
 class Vehicle{
-    constructor(){
-        this.color = "red";
+    constructor(pram){
+        this.color = pram;
     }
 }
 
-let obj1 = new Vehicle();
-let obj2 = new Vehicle();
+let obj1 = new Vehicle("RED");
+let obj2 = new Vehicle("ORANGE");
 
 console.log(obj1);
 console.log(obj2);
