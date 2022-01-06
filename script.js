@@ -147,7 +147,7 @@
  
 // //--------------- calback function----------------
 
- let number = [1,2,3,4,5,6,7,8,9];
+//  let number = [1,2,3,4,5,6,7,8,9];
 
 // let printAll = (item) => {
 //     console.log(item);
@@ -162,9 +162,24 @@
 // let squareNum = number.map(getSquare);
 // console.log(squareNum);
 
-let squareAll = (item) => item * item;
+// let squareAll = (item) => item * item;
 
-let squareNum = number.map(item => item*item);
-console.log(squareNum);
+// let squareNum = number.map(item => item*item);
+// console.log(squareNum);
 
-number.forEach(item => console.log(item * item));
+// number.forEach(item => console.log(item * item));
+
+
+//-------------class------------
+
+class Vehicle{
+    constructor(){
+        this.color = "red";
+    }
+}
+
+let obj1 = new Vehicle();
+let obj2 = new Vehicle();
+
+console.log(obj1);
+console.log(obj2);
