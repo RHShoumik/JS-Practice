@@ -233,6 +233,25 @@
 // obj1.saySomething();
 
 //--------------------------------------------
+// class Vehicle{
+//     constructor(pram1 , pram2){
+//         this.color = pram1;
+//         this.sitCapacity = pram2
+//     }
+//     saySomething(){
+//         console.log(this.color);
+//     }
+// }
+
+// let obj1 = new Vehicle("RED" , 20);
+// let obj2 = new Vehicle("ORANGE" , 4);
+
+
+// obj1.saySomething();
+
+
+//--------------------------------------------
+
 class Vehicle{
     constructor(pram1 , pram2){
         this.color = pram1;
@@ -243,11 +262,17 @@ class Vehicle{
     }
 }
 
-let obj1 = new Vehicle("RED" , 20);
-let obj2 = new Vehicle("ORANGE" , 4);
 
+// inheritance
 
-obj1.saySomething();
+class car extends Vehicle{
+    constructor(cPram , color , sit){
+        super(color,sit);
+        this.wheel= cPram;
 
+    }
+}
 
+let obj1 = new car(4 , "Yellow" , 10)
+console.log(obj1);
 //--------------------------------------------
