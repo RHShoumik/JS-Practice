@@ -252,44 +252,46 @@
 
 //--------------------------------------------
 
-class Vehicle{
-    constructor(pram1 , pram2){
-        this.color = pram1;
-        this.sitCapacity = pram2
-    }
-    saySomething(){
-        console.log(this.color);
-    }
-}
+// class Vehicle{
+//     constructor(pram1 , pram2){
+//         this.color = pram1;
+//         this.sitCapacity = pram2
+//     }
+//     saySomething(){
+//         console.log(this.color);
+//     }
+// }
 
 
-// inheritance
+// // inheritance
 
-class car extends Vehicle{
-    constructor(cPram , color , sit){
-        super(color,sit);
-        this.wheel= cPram;
+// class car extends Vehicle{
+//     constructor(cPram , color , sit){
+//         super(color,sit);
+//         this.wheel= cPram;
 
-    }
-}
+//     }
+// }
 
-let obj1 = new car(4 , "Yellow" , 10)
-console.log(obj1);
+// let obj1 = new car(4 , "Yellow" , 10)
+// console.log(obj1);
 
 
 //-------------------spread Oparetor-------------------------
 
-let numbers = [1, 2, 3, 4, 5];
-let numbers2 = [4, 5, 6, 7, 8];
-let arr = [...numbers, ...numbers2]
-console.log(arr);
+// let numbers = [1, 2, 3, 4, 5];
+// let numbers2 = [4, 5, 6, 7, 8];
+// let arr = [...numbers, ...numbers2]
+// console.log(arr);
 
-//-------------------Rest Oparator-------------------------
-let test = (...num) =>{
-    console.log(num);
-}
-test([99,1,2,3]);
-test(45,45,45,67)
+// //-------------------Rest Oparator-------------------------
+// let test = (...num) =>{
+//     console.log(num);
+// }
+// test([99,1,2,3]);
+// test(45,45,45,67)
+
+
 
 //--------------------------------------------
 //--------------------------------------------
